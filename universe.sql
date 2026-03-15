@@ -272,6 +272,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: comet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.comet VALUES (1, 'Halley', 'Famous short-period comet', true, 4600);
+INSERT INTO public.comet VALUES (2, 'Encke', 'Periodic comet', true, 4500);
+INSERT INTO public.comet VALUES (3, 'Hale-Bopp', 'Long period comet', false, 5000);
 
 
 --
@@ -346,7 +349,7 @@ INSERT INTO public.star VALUES (6, 'Proxima Centauri', 1, 4500, 3042, true);
 -- Name: comet_comet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.comet_comet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.comet_comet_id_seq', 3, true);
 
 
 --
