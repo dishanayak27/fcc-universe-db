@@ -50,8 +50,8 @@ SET default_table_access_method = heap;
 CREATE TABLE public.comet (
     comet_id integer NOT NULL,
     name character varying(100) NOT NULL,
-    description text,
-    is_periodic boolean,
+    description text NOT NULL,
+    is_periodic boolean NOT NULL,
     age_in_millions_of_years integer
 );
 
